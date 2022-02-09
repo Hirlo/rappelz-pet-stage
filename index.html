@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur de Réussite au stadage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Calculateur de Stadage de Familier</h1>
+        <form id="petDetails">
+            <table>
+                <tr>
+                    <td><label for="startLvl">Niveau pet principal</label></td>
+                    <td><input type="number" id="mainPetLvl" min=1 max=210 step="1"></td>
+                </tr>
+                <tr>
+                    <td><label for="endLvl">Niveau pet secondaire</label></td>
+                    <td><input type="number" id="foodPetLvl" min=1 max=210 step="1"></td>
+                </tr>
+                <tr>
+                    <td><label for="type">Type</label></td>
+                    <td><select class="cool-select" id="type">
+                        <option value="0">Classique</option>
+                        <option value="1">Spirituel</option>
+                        <option value="2">Epique</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="stade">Stade actuel</label></td>
+                    <td><select class="cool-select" id="stade">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Calculer" class="btn">&nbsp;</td>
+                    <td><input type="reset" value="Vider les champs" class="btn">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h2>Result</h2></td>
+                </tr>
+                <tr>
+                    <td>Mélangeur</td>
+                    <td id="result">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Mélangeur Spécial</td>
+                    <td id="resultSpecial">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Mélangeur + Joker</td>
+                    <td id="resultJoker">&nbsp;</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
